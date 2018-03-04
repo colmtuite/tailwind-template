@@ -14,15 +14,43 @@
         </style>
     </head>
     <body class="font-sans text-black h-full">
+        <header class="absolute pin-t pin-l w-full py-4">
+            <div class="flex items-center justify-between px-8">
+                <span class="text-2xl tracking-tight font-semibold">
+                    AppLogo
+                </span>
+                <div class="">
+                    <div class="flex items-center">
+                        <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">Link</a>
+                        <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">Link</a>
+                        <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline ml-8" href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+        </header>
         <section class="bg-blue-lightest h-full py-8">
             <div class="w-5/6 max-w-lg ml-auto mr-auto h-full">
                 <div class="flex items-center justify-center text-center h-full">
                     <div>
                         <h1 class="text-5xl font-semibold leading-none tracking-tight mb-4">This is an insanely big ass heading</h1>
                         <h2 class="text-3xl text-blue-darker opacity-75 font-normal leading-none mb-8">This is a little ass heading to provide additional support.</h2>
-                        <div class="flex justify-center mb-4">
-                            <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to something</a>
-                            <a class="text-lg leading-normal text-blue hover:text-blue-dark no-underline" href="#">Link to something</a>
+                        <div class="flex justify-center pt-3 mb-6">
+                            <a class="flex items-center text-xl leading-none text-blue hover:text-blue-dark no-underline mr-4" href="#">
+                                <div class="mr-3">
+                                    <svg class="align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+                                </div>
+                                <span>
+                                    Link to something
+                                </span>
+                            </a>
+                            <a class="flex items-center text-xl leading-none text-blue hover:text-blue-dark no-underline ml-4" href="#">
+                                <div class="mr-3">
+                                    <svg class="align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+                                </div>
+                                <span>
+                                    Link to something
+                                </span>
+                            </a>
                         </div>
                         <div class="flex justify-center pt-8">
                             <button class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold py-4 px-6 rounded-full whitespace-no-wrap mr-2">
@@ -205,8 +233,65 @@
         </section>
 
         <section class="bg-white py-8">
-            <div class="w-5/6 max-w-2xl ml-auto mr-auto">
-                <h1 class="text-5xl font-semibold leading-none tracking-tight">Two link block cards</h1>
+            <div class="w-5/6 max-w-2xl ml-auto mr-auto my-8">
+                <div class="flex flex-wrap -mx-6 -my-6">
+                    <div class="w-full sm:w-1/2 px-6 py-6">
+                        <div class="bg-white rounded shadow-lg overflow-hidden">
+                            <div class="flex">
+                                <div class="flex-1">
+                                    <div class="bg-grey-lightest p-8">
+                                        <h5 class="text-xl font-semibold mb-8">What you get when you sign up:</h5>
+                                        <ul class="list-reset">
+                                            <li class="mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="mr-4">
+                                                        <svg class="align-middle text-teal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                                    </div>
+                                                    <p class="text-lg leading-normal">Single sign-on</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="p-8">
+                                        <button class="bg-blue hover:bg-blue-dark text-xl leading-none text-white font-semibold py-3 px-4 rounded-full whitespace-no-wrap">
+                                            Take my money
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 px-6 py-6">
+                        <div class="bg-white rounded shadow-lg overflow-hidden">
+                            <div class="flex">
+                                <div class="flex-1">
+                                    <div class="bg-grey-lightest p-8">
+                                        <h5 class="text-xl font-semibold mb-8">What you get when you sign up:</h5>
+                                        <ul class="list-reset">
+                                            <li class="mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="mr-4">
+                                                        <svg class="align-middle text-teal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                                    </div>
+                                                    <p class="text-lg leading-normal">Single sign-on</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="p-8">
+                                        <button class="bg-blue hover:bg-blue-dark text-xl leading-none text-white font-semibold py-3 px-4 rounded-full whitespace-no-wrap">
+                                            Take my money
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
