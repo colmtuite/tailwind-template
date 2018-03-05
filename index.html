@@ -9,7 +9,7 @@
 
         <style media="screen">
             .font-sans {
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: 'Source Sans Pro', apple-system, BlinkMacSystemFont, 'Helvetica Neue', arial, sans-serif;
             }
         </style>
     </head>
@@ -150,19 +150,11 @@
                 </div>
 
                 <div class="bg-white rounded shadow-lg overflow-hidden">
-                    <div class="flex">
+                    <div class="flex flex-col-reverse md:flex-row">
                         <div class="flex-1">
                             <div class="bg-grey-lightest p-8">
                                 <h5 class="text-xl font-semibold mb-8">What you get when you sign up:</h5>
                                 <ul class="list-reset">
-                                    <li class="mb-4">
-                                        <div class="flex items-center">
-                                            <div class="mr-4">
-                                                <svg class="align-middle text-teal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                                            </div>
-                                            <p class="text-lg leading-normal">Unlimited projects</p>
-                                        </div>
-                                    </li>
                                     <li class="mb-4">
                                         <div class="flex items-center">
                                             <div class="mr-4">
@@ -199,8 +191,15 @@
                             </div>
                         </div>
                         <div class="flex-1">
-                            <div class="p-8">
-                                <button class="bg-teal hover:bg-teal-dark text-xl leading-none text-white font-semibold h-10 px-6 rounded-full whitespace-no-wrap">
+                            <div class="flex flex-col items-center p-8 h-full">
+                                <div class="flex flex-1 mb-8">
+                                    <div class="flex self-start items-center">
+                                        <span class="text-3xl text-grey-dark leading-none mr-2">$</span>
+                                        <span class="text-5xl font-semibold tracking-tight leading-none text-teal mr-3" style="font-size: 5.6rem;">499</span>
+                                        <span class="text-xl text-grey-dark leading-none">/ month</span>
+                                    </div>
+                                </div>
+                                <button class="bg-teal hover:bg-teal-dark text-xl leading-none text-white font-semibold h-10 px-6 rounded-full whitespace-no-wrap w-full">
                                     Take my money
                                 </button>
                             </div>
@@ -299,8 +298,8 @@
             <div class="w-5/6 max-w-xl ml-auto mr-auto my-8">
                 <div class="flex md:items-center flex-col md:flex-row md:justify-between">
                     <div class="mb-8 md:mb-0 md:pr-4">
-                        <h3 class="text-4xl text-blue font-normal tracking-tight leading-none mb-3">This is a medium heading</h3>
-                        <h4 class="text-3xl text-blue-darker opacity-75 font-normal leading-tight">This might be used for a call to action.</h4>
+                        <h3 class="text-4xl font-normal tracking-tight leading-none mb-3">This is a medium heading</h3>
+                        <h4 class="text-3xl text-grey-dark font-normal leading-tight">This might be used for a call to action.</h4>
                     </div>
                     <div class="md:pl-4">
                         <div class="flex items-center">
@@ -323,9 +322,9 @@
                 </small>
                 <div class="mb-4 md:mb-0">
                     <div class="flex flex-col md:flex-row md:items-center">
-                        <a class="text-xl md:text-base leading-normal text-blue hover:text-blue-dark no-underline mb-4 md:mb-0 md:ml-8" href="#">Link</a>
-                        <a class="text-xl md:text-base leading-normal text-blue hover:text-blue-dark no-underline mb-4 md:mb-0 md:ml-8" href="#">Another link</a>
-                        <a class="text-xl md:text-base leading-normal text-blue hover:text-blue-dark no-underline mb-4 md:mb-0 md:ml-8" href="#">Link to something</a>
+                        <a class="text-xl md:text-base leading-normal text-grey-dark hover:text-black no-underline mb-4 md:mb-0 md:ml-8" href="#">Link</a>
+                        <a class="text-xl md:text-base leading-normal text-grey-dark hover:text-black no-underline mb-4 md:mb-0 md:ml-8" href="#">Another link</a>
+                        <a class="text-xl md:text-base leading-normal text-grey-dark hover:text-black no-underline mb-4 md:mb-0 md:ml-8" href="#">Link to something</a>
                     </div>
                 </div>
             </div>
